@@ -1,4 +1,4 @@
-[MIXvoip Logo](https://raw.githubusercontent.com/mixvoip/passmanager/master/app/webroot/img/mixvoip.png)
+[MIXvoip Logo](./raw/master/app/webroot/img/mixvoip.png)
 # Passmanager
 The Passmanager 2.0 is a tool to manage password via folders and tag's. There are 2 types of folders: The Private and the Shared Folder. Additionally to the folders there are the tag's. Tag's are used to control the users access to the passwords in a folder.
 
