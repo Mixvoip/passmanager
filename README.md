@@ -9,4 +9,4 @@ The Passmanager 2.0 is a tool to manage password via folders and tag's. There ar
 * [Twitter](https://twitter.com/mixvoip)
 
 ## License
-The Project is under the [License](https://opensource.org/licenses/mit-license.php).
+The Project is under the [MIT License](https://opensource.org/licenses/mit-license.php).
