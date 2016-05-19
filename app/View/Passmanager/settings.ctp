@@ -5,7 +5,8 @@ $this->assign('administration', $administration);
 ?>
     <div class="row" id="settings">
         <h3>Your Settings</h3>
-        <form class="form-horizontal passwordMatch" action="Users/changePassword" method="post"
+        <form class="form-horizontal passwordMatch" action="<?= FULL_BASE_URL . $this->webroot ?>Users/changePassword"
+              method="post"
               id="changePasswordForm">
             <div class="col-sm-12">
                 <div class="input-group">
