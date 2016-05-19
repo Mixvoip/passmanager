@@ -1,10 +1,10 @@
 ![MIXvoip Logo](app/webroot/img/mixvoip.png?raw=true)
 # Passmanager
-The Passmanager 2.0 is a tool to manage password via folders and tag's. There are 2 types of folders: The Private and the Shared Folder. Additionally to the folders there are the tag's. Tag's are used to control the users access to the passwords in a folder.
+The Passmanager 2.0 is a tool to manage password via folders and tag's. There are 2 types of folders: The Private and the Shared Folder. Additionally to the folders there are the tag's. Tag's are used to control the user's access to the passwords in a folder.
 
-The Passmanager is a Web-application and runs with PHP using the cakephp Framework
+The Passmanager is a Web-application and runs with PHP using the CakePHP Framework
 
-All Passwords are encrypted using a twofish encryption provided by the Phpseclib. 
+All Passwords are encrypted using a Twofish encryption provided by the phpseclib. 
 
 ## How to Install
 ### Requirements
@@ -14,7 +14,7 @@ All Passwords are encrypted using a twofish encryption provided by the Phpseclib
  * sqlite3 for your operating system (to create the database) *(tipp: under Debian/Ubuntu you can use `apt-get install sqlite3` )*.
          
 ### Setup
-1. Make sure your Webserver installation can run cakephp ([cakephp install instructions](http://book.cakephp.org/2.0/en/installation.html))
+1. Make sure your Webserver installation can run CakePHP ([cakephp install instructions](http://book.cakephp.org/2.0/en/installation.html))
 2. Clone the sources from github `git clone https://github.com/mixvoip/passmanager.git`
 3. Go to the `app/webroot/db` Directory and execute the `./createDatabase.sh` Script to create the database
 4. To create the *admin* user with the default password *q1w2e3!*  and the root tag run in the `app/webroot/db` the command `sqlite3 Passmanager.db < firstUser.sql`. We recommend to change the password of the *admin* user as soon as possible
@@ -32,7 +32,7 @@ All Passwords are encrypted using a twofish encryption provided by the Phpseclib
 The main configuration file for the App is the `app/Config/AppSettings.php` File
 
 ###The Cryptology
-For the Cryptology the Passmanager uses the twofish algorithm from the Phpseclib. All cryptographic functions are implemented in the `app/Vendor/CryptoWrapper.php` for simple replacement.
+For the Cryptology the Passmanager uses the Twofish algorithm from the phpseclib. All cryptographic functions are implemented in the `app/Vendor/CryptoWrapper.php` for simple replacement.
 
 ## License
 The Project is under the [MIT License](https://opensource.org/licenses/mit-license.php).
