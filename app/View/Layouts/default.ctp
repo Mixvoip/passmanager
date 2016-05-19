@@ -15,7 +15,10 @@
  */
 
 $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
+$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version());
+if (!isset($invites)) {
+    $invites = null;
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -70,7 +73,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                     </li>
                 </ul>
             <?php }
-            if (isset($administration)) echo $this->element('navBar', array($administration));
+            if (isset($administration)) echo $this->element('navBar', array($administration, $invites));
             ?>
         </div>
     </nav>

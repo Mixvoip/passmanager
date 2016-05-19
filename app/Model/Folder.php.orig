@@ -186,7 +186,7 @@ class Folder extends AppModel
     public function getAllFolderForUser($userID)
     {
         $firstFolderID = Configure::read('FirstFolderID');
-        $result = Cache::read('newest_folders_' . $userID, 'short');
+        $result = Cache::read('newest_folders', 'short');
         $edited = Cache::read('edited', 'short');
         if (!$result || (isset($edited) && $edited)) {
             $result = $this->find('all', array(

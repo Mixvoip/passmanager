@@ -8,6 +8,7 @@
 //Variable pass-thru
 $this->assign('title', $title);
 $this->assign('administration', $administration);
+$this->assign('invites', $invites);
 ?>
     <div id="mainTab" class="tab-pane active row">
         <!--Side nav-->

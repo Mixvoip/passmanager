@@ -68,10 +68,7 @@ class PassmanagerController extends AppController {
                 'guest_user_id' => $_SESSION['user_id']
             )
         ));
-
-        if ($invites > 0) {
-            $this->Flash->warning('You have ' . $invites . ' Invites open. <a id="acceptInvites">Accept Invites</a>');
-        }
+        $this->set('invites', $invites);
     }
 
     public function settings()
