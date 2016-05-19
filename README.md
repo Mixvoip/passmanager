@@ -8,10 +8,10 @@ All Passwords are encrypted using a Twofish encryption provided by the phpseclib
 
 ## How to Install
 ### Requirements
- * A HTTP Server with URL Rewriting (Apache 2 with mod_rewrite is fine)
- * PHP version 5.3.0 at least but not above PHP 7
+ * A webserver with URL Rewriting (Apache 2 with mod_rewrite is fine)
+ * PHP >= 5.3.0 (excluding PHP 7)
  * sqlite3 module for PHP
- * sqlite3 for your operating system (to create the database) *(tipp: under Debian/Ubuntu you can use `apt-get install sqlite3` )*.
+ * sqlite3 for your operating system (to create the database) *(under Debian/Ubuntu you can use `apt-get install sqlite3` )*.
          
 ### Setup
 1. Make sure your Webserver installation can run CakePHP ([cakephp install instructions](http://book.cakephp.org/2.0/en/installation.html))
@@ -23,7 +23,7 @@ All Passwords are encrypted using a Twofish encryption provided by the phpseclib
 
 ## Contacts
 * To contact MIXvoip S.a. please visit our [Homepage](https://www.mixvoip.com/contact/)
-* The Devloper can be reached under [claures@mixvoip.com](mailto:claures@mixvoip.com)
+* For questions contact us at [tech@mixvoip.com](mailto:tech@mixvoip.com)
 * [Facebook](https://www.facebook.com/mixvoip)
 * [Twitter](https://twitter.com/mixvoip)
 
