@@ -9,7 +9,12 @@ if (isset($_SESSION['user_id'])) {
                 'action' => 'settings'
             ),
             array('title' => 'Settings')) ?></p>
-    <?php if ($administration) { ?>
+    <?php if (isset($invites) && $invites > 0) { ?>
+        <p class='navbar-text acceptInvites'>
+            You have <?= $invites ?> Invites open.<br><a id="acceptInvites">Accept Invites</a>
+        </p>
+    <?php }
+    if ($administration) { ?>
         <p class='navbar-text vertical-align'><?= $this->Html->link(
                 'Administration',
                 array(
