@@ -9,7 +9,6 @@ $(document).on('click', '.addFolder', function (evt) {
     evt.preventDefault();
     $('#addFolderPopup').show();
     $('#blackOverlay').show();
-    $('#desc_add_folder_yourPassword').next('input').focus();
 });
 
 //Delete Folder click
