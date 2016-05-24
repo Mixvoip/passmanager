@@ -24,7 +24,7 @@
 /**
  * Version for App and Database
  */
-Configure::write('Version.core', '1.0.2');
+Configure::write('Version.core', '1.0.4');
 Configure::write('Version.db', '3.2');
 /**
  * CakePHP Debug Level:

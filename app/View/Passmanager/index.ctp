@@ -15,6 +15,11 @@ $this->assign('invites', $invites);
         <div class="col-md-2 col-sm-12" id="folderSelect">
             <div class="tabs-left">
                 <ul class="nav nav-pills nav-stacked folderNav">
+                    <li title="new">
+                        <a href="#new" title="Add a new Folder" data-toggle="tooltip" class="addFolder">
+                            <?php echo $this->Html->image('add_folder_blue.png', array('alt' => 'Add new folder')); ?>
+                        </a>
+                    </li>
                     <li title="favorite">
                         <a id="favTabControl" href="#fav" data-toggle="tab"><span
                                 class="glyphicon glyphicon-star"></span></a>
@@ -31,11 +36,6 @@ $this->assign('invites', $invites);
                         }
                         echo "<li title=\"{$folder['Folder']['name']}\"><a class=\"dotOverflow scrollToTop\" href=\"#folder_{$folder['Folder']['id']}\" data-toggle=\"tab\">$icon</a></li>";
                     } ?>
-                    <li title="new">
-                        <a href="#new" title="Add a new Folder" data-toggle="tooltip" class="addFolder">
-                            <?php echo $this->Html->image('add_folder_blue.png', array('alt' => 'Add new folder')); ?>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
