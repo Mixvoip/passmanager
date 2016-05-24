@@ -15,12 +15,12 @@ $this->assign('invites', $invites);
         <div class="col-md-2 col-sm-12" id="folderSelect">
             <div class="tabs-left">
                 <ul class="nav nav-pills nav-stacked folderNav">
-                    <li title="new">
+                    <li title="new" class="inline">
                         <a href="#new" title="Add a new Folder" data-toggle="tooltip" class="addFolder">
                             <?php echo $this->Html->image('add_folder_blue.png', array('alt' => 'Add new folder')); ?>
                         </a>
                     </li>
-                    <li title="favorite">
+                    <li title="favorite" class="inline">
                         <a id="favTabControl" href="#fav" data-toggle="tab"><span
                                 class="glyphicon glyphicon-star"></span></a>
                     </li>

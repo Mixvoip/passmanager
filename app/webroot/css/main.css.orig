@@ -381,11 +381,6 @@ table thead {
     height: 120px;
 }
 
-.inline {
-    display: inline-block !important;
-    width: 40%;
-}
-
 /* ############# END ############ */
 /* ############ Footer ########## */
 
