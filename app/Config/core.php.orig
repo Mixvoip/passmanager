@@ -24,7 +24,7 @@
 /**
  * Version for App and Database
  */
-Configure::write('Version.core', '1.0.1');
+Configure::write('Version.core', '1.0.2');
 Configure::write('Version.db', '3.2');
 /**
  * CakePHP Debug Level:
@@ -40,7 +40,7 @@ Configure::write('Version.db', '3.2');
  * In development mode, you need to click the flash message to continue.
  */
 //Configure::write('debug', 2);
-Configure::write('debug', 2);
+Configure::write('debug', 0);
 
 /**
  * Raise php execution time to 5 min for the debug mode

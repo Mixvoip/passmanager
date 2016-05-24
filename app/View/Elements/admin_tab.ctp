@@ -26,11 +26,12 @@
             <th>Tag Name</th>
             <th>Parent Tag ID</th>
             <th>Users in tag</th>
+            <th>Passwords in tag</th>
             <th>Actions</th>
         </tr>
         </thead>
         <tbody>
-        <?= $this->element('tags_table', array('tags' => $allTags)) ?>
+        <?= $this->element('tags_table', array('tags' => $allTags, 'countsTag' => $countsTag)) ?>
         </tbody>
     </table>
 </div>

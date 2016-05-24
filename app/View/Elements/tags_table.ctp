@@ -7,6 +7,11 @@ foreach ($tags as $tag) {
     echo "<td>{$tag['Tag']['name']}</td>";
     echo "<td>$tagName</td>";
     echo "<td>" . count($tag['User']) . "</td>";
+    $pwNum = 0;
+    if (isset($countsTag, $countsTag[$tag['Tag']['id']])) {
+        $pwNum = $countsTag[$tag['Tag']['id']];
+    }
+    echo "<td>$pwNum</td>";
     ?>
     <td>
         <button data-toggle="tooltip" title="Show users in tag" class="btn btn-xs btn-default showTagAction"><span

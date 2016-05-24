@@ -220,7 +220,9 @@ class TagsController extends AjaxController
         //Resend user table
         $this->autoLayout = false;
         $tags = $this->Tag->find('all');
+        $tagCount = $this->Tag->getPasswordTagCountArray();
         $this->set('tags', $tags);
+        $this->set('countsTag', $tagCount);
         $this->render('/Elements/tags_table');
     }
 }

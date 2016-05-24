@@ -333,4 +333,24 @@ class Tag extends AppModel
         }
         return $result;
     }
+
+    /**Get the numbers of passwords for all the tags
+     * @return array Array in format array(<tag_id>=><password_count>,...)
+     */
+    public function getPasswordTagCountArray()
+    {
+        App::import('Model', 'PasswordHasTag');
+        $PasswordHasTag = new PasswordHasTag();
+        $dbArray = $PasswordHasTag->find('all', array(
+            'fields' => array('PasswordHasTag.tag_id ', 'COUNT(PasswordHasTag.id) as pws'),
+            'group' => array('PasswordHasTag.tag_id')
+        ));
+
+        //Rebuild array in format <tag_id>=><password_count>
+        $res = array();
+        foreach ($dbArray as $entry) {
+            $res[$entry['PasswordHasTag']['tag_id']] = $entry[0]['pws'];
+        }
+        return $res;
+    }
 }

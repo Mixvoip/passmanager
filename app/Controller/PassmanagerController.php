@@ -90,8 +90,10 @@ class PassmanagerController extends AppController {
             $this->set('administration', $this->isActualUserAdmin());
             $allUsers = $this->User->find('all');
             $allTags = $this->Tag->find('all');
+            $countsTag = $this->Tag->getPasswordTagCountArray();
             $this->set('allUsers', $allUsers);
             $this->set('allTags', $allTags);
+            $this->set('countsTag', $countsTag);
         } else {
             $this->Flash->warning("You have to be admin");
         }
