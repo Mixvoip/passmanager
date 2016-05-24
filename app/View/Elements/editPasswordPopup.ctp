@@ -21,7 +21,7 @@
             <div class="col-md-12">
                 <div class="input-group">
                     <span id="desc_editPW_uname" class="input-group-addon">Username</span>
-                    <input type="text" class="form-control" name="passwordUsername" placeholder="Username"
+                    <input type="text" class="form-control" name="passwordUsername" placeholder="*************"
                            aria-describedby="desc_editPW_uname">
                 </div>
             </div>

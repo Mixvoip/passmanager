@@ -314,8 +314,8 @@ class Password extends AppModel
         }
 
         return array(
-            'username' => $clear_username,
-            'password' => $clear_password
+            'username' => trim($clear_username),
+            'password' => trim($clear_password)
         );
     }
 
