@@ -9,7 +9,7 @@
         </thead>
         <tbody>
         <tr>
-            <td class="col-md-2"><?= str_replace('\n', '<br>', htmlspecialchars($folder['Folder']['name'])) ?></td>
+            <td class="col-md-2 folderName"><?= str_replace('\n', '<br>', htmlspecialchars($folder['Folder']['name'])) ?></td>
             <td class="col-md-8"><?= str_replace('\n', '<br>', htmlspecialchars($folder['Folder']['description'])); ?></td>
             <td class="col-md-2" data-folderID="<?= $folder['Folder']['id'] ?>">
                 <button class="btn btn-sm btn-default addPassword" data-toggle="tooltip"

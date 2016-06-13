@@ -292,6 +292,10 @@ div .checkbox {
     display: none;
 }
 
+.folderName {
+    font-weight: bold;
+}
+
 table.tablesorter {
     background-color: transparent;
 }
